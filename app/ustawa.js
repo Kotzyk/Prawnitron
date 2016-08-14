@@ -5,7 +5,6 @@
 var Ustawa = (function () {
     function Ustawa() {
     }
-
     return Ustawa;
 }());
 exports.Ustawa = Ustawa;

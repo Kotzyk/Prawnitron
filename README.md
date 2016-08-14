@@ -1,3 +1,3 @@
 Mortadela, mortadela
-Janusz Pawlasz
+Janusz Pawlacz
 Kawał... sera

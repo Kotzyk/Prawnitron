@@ -46,7 +46,6 @@ var SearchFormComponent = (function () {
             }];
         this.submitted = false;
     }
-
     SearchFormComponent.prototype.onSubmit = function () {
         this.submitted = true;
     };
@@ -54,7 +53,7 @@ var SearchFormComponent = (function () {
         core_1.Component({
             selector: 'search-form',
             template: "\n    <div class=\"well-lg\">\n    <legend>Wyszukiwanie ustaw</legend>\n    \n    <form class=\"form-horizontal\" method=\"get\">\n    <fieldset>\n        <div class=\"form-group\">\n            <label class=\"col-sm-1 control-label\" for=\"inputNazwa\">Nazwa</label>\n            <div class=\"col-lg-3\">\n                <input type=\"search\" list=\"kody\" class=\"form-control\" id=\"inputNazwa\" />\n                <datalist id=\"kody\">\n                    <option *ngFor=\"let kodeks of kodeksy\" [value]= kodeks.nazwa></option>\n                </datalist>\n            </div>\n        </div>\n        \n        <div class=\"form-group-sm\" hidden>\n            <label class=\"label\" for=\"arty\">Artuku\u0142y</label>\n            <input type=\"number\" title=\"Wybrane artykuly\" id=\"arty\" required/>\n        </div>\n        \n        <div class=\"form-group-lg\">\n            <h4>Adres w Dzienniku Ustaw</h4>\n            <label for=\"adres\">Rok dziennika</label>\n            \n            <input type=\"search\" placeholder=\"Rok\" id=\"adres\"/>\n            <label for=\"nr\">Numer</label>\n            \n            <input type=\"number\" placeholder=\"(Nr w Dz.U)\" id=\"nr\"/>\n            <label for=\"pozycja\">Pozycja</label>\n            \n            <input type=\"number\" placeholder=\"Poz. w Dz.U\" id=\"pozycja\"/>\n        </div>\n        <div class=\"form-group\" hidden>\n            <label for=\"arty\">Artuku\u0142y</label>\n            <input type=\"number\" title=\"Wybrane artykuly\" id=\"arty\" required/>\n        </div>\n        \n        <button type=\"submit\" class=\"btn btn-primary\"> <strong> Zgwa\u0142\u0107 te dzieci! </strong> </button>\n        </fieldset>\n    </form> \n</div>"
-        }),
+        }), 
         __metadata('design:paramtypes', [])
     ], SearchFormComponent);
     return SearchFormComponent;

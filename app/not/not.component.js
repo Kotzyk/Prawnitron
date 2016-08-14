@@ -12,12 +12,11 @@ var core_1 = require("@angular/core");
 var NotComponent = (function () {
     function NotComponent() {
     }
-
     NotComponent = __decorate([
         core_1.Component({
             selector: 'not-found',
             templateUrl: '/app/not/not.component.html'
-        }),
+        }), 
         __metadata('design:paramtypes', [])
     ], NotComponent);
     return NotComponent;

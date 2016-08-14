@@ -20,13 +20,12 @@ var not_component_1 = require("./not/not.component");
 var AppModule = (function () {
     function AppModule() {
     }
-
     AppModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
             declarations: [app_component_1.AppComponent, search_form_component_1.SearchFormComponent, not_component_1.NotComponent],
             bootstrap: [app_component_1.AppComponent]
-        }),
+        }), 
         __metadata('design:paramtypes', [])
     ], AppModule);
     return AppModule;

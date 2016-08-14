@@ -29,13 +29,12 @@ var AppComponent = (function () {
             }
         ];
     }
-
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
             template: "\n<navbar></navbar>\n<search-form></search-form>\n",
             directives: [not_component_1.NotComponent, navbar_component_1.NavBarComponent, search_form_component_1.SearchFormComponent]
-        }),
+        }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
     return AppComponent;
