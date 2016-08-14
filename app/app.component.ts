@@ -1,29 +1,16 @@
 /**
- * Created by Mateusz on 2016-08-12.
+ * Created by Mateusz on 2016-08-14.
  */
-import {Component} from "@angular/core";
-import {NotComponent} from "./not.component";
-import {SearchFormComponent} from "./search-form.component";
+import {Component} from '@angular/core';
 import {NavBarComponent} from "./navbar.component";
+
 @Component({
     selector: 'my-app',
     template: `
-<navbar></navbar>
-<search-form></search-form>
-`,
-    directives: [NotComponent, NavBarComponent, SearchFormComponent]
+    <navbar></navbar>
+    <router-outlet></router-outlet>
+  `,
+    directives: [NavBarComponent]
 })
 export class AppComponent {
-    title: string = 'Prawnitron';
-    links: any[] = [
-        {
-            name: "Jan Paweł 1",
-            address: "##"
-        },
-        {
-            name: "Jan Paweł 2",
-            address: "#"
-        }
-
-    ];
 }

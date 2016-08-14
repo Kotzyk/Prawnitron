@@ -2,60 +2,7 @@ import {Component} from "@angular/core";
 
 @Component({
     selector: 'search-form',
-    template: `
-<div class="well-lg">
-<legend>Wyszukiwanie ustaw</legend>
-
-<form class="form-horizontal" method="get">
-    <fieldset>
-        <div class="form-group">
-            <label class="col-md-1 control-label" for="inputNazwa">Nazwa</label>
-            <div class="col-md-3">
-                <input type="search" list="kody" class="form-control" id="inputNazwa"/>
-                <datalist id="kody">
-                    <option *ngFor="let kodeks of kodeksy" [value]=kodeks.nazwa></option>
-                </datalist>
-            </div>
-        </div>
-
-        <div class="form-group">
-            <label class="control-label col-md-1" for="inputArtykuly">Artukuły</label>
-            <div class="col-sm-2">
-                <input class="form-control" type="number" id="inputArtykuly" disabled/>
-            </div>
-        </div>
-    
-        <div class="form-group">
-            <label class="col-md-1 control-label" for="inputRok">Rok wydania ustawy</label>
-            <div class="col-sm-2">
-                <input type="search" class="form-control" placeholder="Rok" id="inputRok"/>
-            </div>
-        </div>
-        <div class="form-group">
-            <label class="control-label col-md-1" for="inputNumer">Numer</label>
-            <div class="form-group col-sm-1 col ">
-                <input type="number" class="form-control" placeholder="Nr w Dz.U - opcjonalnie" id="inputNumer"/>
-            </div>
-        </div>
-        <div class="form-group">
-            <label class="control-label col-md-1" for="inputPozycja">Pozycja</label>
-            <div class="form-group col-sm-1 col-lg-1">
-                <input class="form-control" type="number" placeholder="Poz. w Dz.U" id="inputPozycja"/>
-            </div>
-        </div>
-        <div class="form-group">
-            <label class="control-label col-md-1" for="inputArtykuly2">Artukuły</label>
-            <div class="col-sm-2 col-xs-2">
-                <input class="form-control" type="number" id="inputArtykuly2" disabled/>
-            </div>
-        </div>
-
-        <div class="form-group">
-            <button type="submit" class="btn btn-primary"><strong> Złap je wszystkie! </strong></button>
-        </div>
-    </fieldset>
-</form>
-</div>`
+    templateUrl: '/app/search-form.component.html'
 })
 export class SearchFormComponent {
     kodeksy: any[] = [
