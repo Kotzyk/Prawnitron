@@ -2,7 +2,7 @@
  * Created by Mateusz on 2016-08-12.
  */
 import {Component} from "@angular/core";
-import {NotComponent} from "./not/not.component";
+import {NotComponent} from "./not.component";
 import {SearchFormComponent} from "./search-form.component";
 import {NavBarComponent} from "./navbar.component";
 @Component({

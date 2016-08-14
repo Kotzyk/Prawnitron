@@ -30,6 +30,8 @@ typings/
 
 ## File-based project format:
 *.iws
+*.component.js
+*.component.js.map
 
 ## Plugin-specific files:
 
