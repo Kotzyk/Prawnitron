@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "navbar.component.js",
+  "sourceRoot": "",
+  "sources": [
+    "navbar.component.ts"
+  ],
+  "names": [],
+  "mappings": ";;;;;;;;;;AAAA;;GAEG;AACH,qBAAwB,eAAe,CAAC,CAAA;AA0CxC;IAAA;IAEA,CAAC;IA1CD;QAAC,gBAAS,CAAC;YACP,QAAQ,EAAE,QAAQ;YAClB,QAAQ,EAAE,u8CAkCb;SAEA,CAAC;;uBAAA;IAIF,sBAAC;AAAD,CAAC,AAFD,IAEC;AAFY,uBAAe,kBAE3B,CAAA"
+}

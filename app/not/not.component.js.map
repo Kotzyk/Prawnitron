@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "not.component.js",
+  "sourceRoot": "",
+  "sources": [
+    "not.component.ts"
+  ],
+  "names": [],
+  "mappings": ";;;;;;;;;;AAAA,qBAAwB,eAAe,CAAC,CAAA;AAKxC;IAAA;IACA,CAAC;IALD;QAAC,gBAAS,CAAC;YACP,QAAQ,EAAE,WAAW;YACrB,WAAW,EAAE,6BAA6B;SAC7C,CAAC;;oBAAA;IAEF,mBAAC;AAAD,CAAC,AADD,IACC;AADY,oBAAY,eACxB,CAAA"
+}

@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "ustawa.js",
+  "sourceRoot": "",
+  "sources": [
+    "ustawa.ts"
+  ],
+  "names": [],
+  "mappings": ";AAAA;;GAEG;AACH;IAAA;IAKA,CAAC;IAAD,aAAC;AAAD,CAAC,AALD,IAKC;AALY,cAAM,SAKlB,CAAA"
+}

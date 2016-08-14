@@ -1,0 +1,69 @@
+{
+  "id": "143498",
+  "dataset": "prawo",
+  "url": "https:\/\/api-v3.mojepanstwo.pl\/dane\/prawo\/143498",
+  "mp_url": "https:\/\/mojepanstwo.pl\/dane\/prawo\/143498",
+  "schema_url": "https:\/\/api-v3.mojepanstwo.pl\/schemas\/dane\/prawo.json",
+  "global_id": "38442669",
+  "slug": "postanowienie-nr-1130-15-2015-o-powolaniu-do-pelnienia-urzedu-na-stanowisku-sedziego",
+  "score": null,
+  "data": {
+    "prawo.poz": 86,
+    "prawo.nr": 0,
+    "prawo.isap_data_obowiazywania": "2015-11-30",
+    "prawo.isap_data_wydania": "2015-11-30",
+    "prawo.konstytucja": "0",
+    "prawo.isap_plik_id": "0",
+    "prawo.isap_organ_zobowiazany_str": "",
+    "prawo.data_publikacji": "2016-01-26",
+    "prawo.isap_status_str": "obowi\u0105zuj\u0105cy",
+    "prawo.data_wydania": "2015-11-30",
+    "prawo.id": "143498",
+    "prawo.projekt_id": "",
+    "prawo.pierwotny": "0",
+    "prawo.isap_organ_wydajacy_str": "PREZYDENT RZECZYPOSPOLITEJ",
+    "prawo.isap_organ_uprawniony_str": "",
+    "prawo.data_wejscia_w_zycie": "2015-11-30",
+    "prawo.opis": "",
+    "prawo.autor_nazwa": "",
+    "prawo.label_html": "<span class=\"_tn\">Postanowienie<\/span> <span class=\"_ad\">Prezydenta<\/span> z dnia <span class=\"_ds\" value=\"2015-11-30\">30 listopada 2015 r.<\/span>",
+    "prawo.autorzy_html": "",
+    "prawo.zrodlo": "MP",
+    "prawo.sygnatura": "M.P. z 2016 r., poz. 86",
+    "prawo.isap_data_ogloszenia": "2016-01-26",
+    "prawo.status_id": "1",
+    "prawo.label": "Postanowienie Prezydenta z dnia 30 listopada 2015 r.",
+    "prawo.tytul_skrocony": "nr 1130.15.2015 o powo\u0142aniu do pe\u0142nienia urz\u0119du na stanowisku s\u0119dziego",
+    "prawo.isap_id": "125502",
+    "prawo.kodeks": "0",
+    "prawo.liczba_zalacznikow": 0,
+    "prawo.typ_nazwa": "Postanowienie",
+    "prawo.autor_id": "52",
+    "prawo.typ_id": "9",
+    "prawo.tytul": "Postanowienie Prezydenta Rzeczypospolitej Polskiej z dnia 30 listopada 2015 r. nr 1130.15.2015 o powo\u0142aniu do pe\u0142nienia urz\u0119du na stanowisku s\u0119dziego",
+    "prawo.isap_plik_dokument_id": "0",
+    "prawo.isap_data_wejscia_w_zycie": "2015-11-30",
+    "prawo.isap_uwagi_str": "",
+    "prawo.rok": 2016,
+    "prawo.dokument_id": "1739177",
+    "prawo.opis_skrot": ""
+  },
+  "layers": {
+    "dataset": null,
+    "channels": null,
+    "page": null,
+    "subscribers": null
+  },
+  "Aggs": {
+    "_page": {
+      "doc_count": 0,
+      "page": {
+        "hits": {
+          "total": 0,
+          "max_score": null,
+          "hits": []
+        }
+      }
+    }
+  }
+}

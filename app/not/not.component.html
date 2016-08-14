@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Page Not Found</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        html {
+            color: #888;
+            display: table;
+            font-family: sans-serif;
+            height: 100%;
+            text-align: center;
+            width: 100%;
+        }
+
+        body {
+            display: table-cell;
+            vertical-align: middle;
+            margin: 2em auto;
+        }
+
+        h1 {
+            color: #555;
+            font-size: 2em;
+            font-weight: 400;
+        }
+
+        p {
+            margin: 0 auto;
+            width: 280px;
+            font-size: larger;
+        }
+
+        @media only screen and (max-width: 280px) {
+            body, p {
+                width: 95%;
+            }
+
+            h1 {
+                font-size: 1.5em;
+                margin: 0 0 0.3em;
+            }
+        }
+
+        .spock {
+            width: 25em;
+            height: 20em;
+            position: center;
+            background-color: red;
+            background-repeat: no-repeat;
+        }
+
+        .fallingAgieh {
+            text-align: center;
+            z-index: 1;
+            position: fixed;
+        }
+
+        .fallingAgieh span {
+            display: inline-block;
+            width: 125px;
+            height: 125px;
+            margin: -380px 100px 100px -50px;
+            background-image: url("/images/agh_uj_paue_ssie.png");
+            -webkit-animation: fallingAgieh 8s infinite linear;
+            -moz-animation: fallingAgieh 8s infinite linear;
+            -animation: fallingAgieh 8s infinite linear;
+        }
+
+        .fallingAgieh span:nth-child(5n+5) {
+            -webkit-animation-delay: 1.3s;
+            -moz-animation-delay: 1.3s;
+            animation-delay: 1.3s;
+        }
+
+        .fallingAgieh span:nth-child(3n+2) {
+            -webkit-animation-delay: 1.5s;
+            -moz-animation-delay: 1.5s;
+            animation-delay: 1.5s;
+        }
+
+        .fallingAgieh span:nth-child(2n+5) {
+            -webkit-animation-delay: 1.7s;
+            -moz-animation-delay: 1.7s;
+            animation-delay: 1.7s;
+        }
+
+        .fallingAgieh span:nth-child(3n+10) {
+            -webkit-animation-delay: 2.7s;
+            -moz-animation-delay: 2.7s;
+            animation-delay: 2.7s;
+        }
+
+        .fallingAgieh span:nth-child(7n+2) {
+            -webkit-animation-delay: 3.5s;
+            -moz-animation-delay: 3.5s;
+            animation-delay: 3.5s;
+        }
+
+        .fallingAgieh span:nth-child(4n+5) {
+            -webkit-animation-delay: 5.5s;
+            -moz-animation-delay: 5.5s;
+            animation-delay: 5.5s;
+        }
+
+        .fallingAgieh span:nth-child(3n+7) {
+            -webkit-animation-delay: 8s;
+            -moz-animation-delay: 8s;
+            animation-delay: 8s;
+        }
+
+        @-webkit-keyframes fallingAgieh {
+            0% {
+                opacity: 1;
+                -webkit-transform: translate(0, 0px) rotateZ(0deg);
+            }
+
+            75% {
+                opacity: 1;
+                -webkit-transform: translate(120px, 483px) rotateZ(270deg);
+            }
+
+            100% {
+                opacity: 0;
+                -webkit-transform: translate(150px, 643px) rotateZ(360deg);
+            }
+        }
+
+        @-moz-keyframes fallingAgieh {
+            0% {
+                opacity: 1;
+                -webkit-transform: translate(0, 0px) rotateZ(0deg);
+            }
+
+            75% {
+                opacity: 1;
+                -webkit-transform: translate(120px, 483px) rotateZ(270deg);
+            }
+
+            100% {
+                opacity: 0;
+                -webkit-transform: translate(150px, 643px) rotateZ(360deg);
+            }
+        }
+
+        @keyframes fallingAgieh {
+            0% {
+                opacity: 1;
+                transform: translate(0, 0px) rotateZ(0deg);
+            }
+
+            75% {
+                opacity: 1;
+                transform: translate(120px, 483px) rotateZ(270deg);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translate(150px, 643px) rotateZ(360deg);
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="fallingAgieh">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+
+</div>
+<div style="height: 2rem"></div>
+<div style="z-index: -1">
+    <img src="http://x3.cdn03.imgwykop.pl/c3201142/comment_7GtaoNQcYilKovGio9NA6BttKZyNFkIk,w400.jpg" class="spock"
+         style="margin-bottom: 1rem">
+    <h1>Kuuuuuuuuuuurwa</h1>
+    <p>Zjebałeś, Spock.</p>
+</div>
+</body>
+
+</html>
+<!-- IE needs 512+ bytes: http://blogs.msdn.com/b/ieinternals/archive/2010/08/19/http-error-pages-in-internet-explorer.aspx -->
