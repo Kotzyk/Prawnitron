@@ -1,6 +1,7 @@
 {
   "name": "Prawnotron",
   "version": "1.0.0",
+  "repository": "https://github.com/Kotzyk/Prawnitron.git",
   "scripts": {
     "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
     "lite": "lite-server",
