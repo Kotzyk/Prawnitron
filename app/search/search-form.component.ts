@@ -2,7 +2,7 @@ import {Component} from "@angular/core";
 
 @Component({
     selector: 'search-form',
-    templateUrl: '/app/search-form.component.html'
+    templateUrl: '/app/search/search-form.component.html'
 })
 export class SearchFormComponent {
     kodeksy: any[] = [
