@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 
-import { SearchFormComponent }    from 'app/search-component';
-import { SearchResultsComponent } from 'app/search-results';
+import { SearchFormComponent }    from 'app/search/search-form';
+import { SearchResultsComponent } from 'app/search/search-results';
 
 @Component({
  selector: 'search-main',
