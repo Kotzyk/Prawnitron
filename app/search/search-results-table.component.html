@@ -1,0 +1,24 @@
+<div class="container">
+  <table class="">
+    <thead class="">
+      <tr>
+        <th>Tytul</th>
+        <th>Data obow.</th>
+        <th>Akt?</th>
+        <th>Nr</th>
+        <th>Poz.</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let ustawa of ustawy" class="">
+        <td class="">{{ustawa.tytul_skrocony}}</td>
+        <td>{{ustawa.data_obowiazywania | date}}</td>
+        <td>{{ustawa.status_bool}}</td>
+        <td id="tick"> <!-- TODO: ikonki ticka i X, dodac warunkowanie wyswieltania <img [src]="" *ngIf=""/> --></td>
+        <td>{{ustawa.nr}}</td>
+        <td>{{ustawa.poz}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
