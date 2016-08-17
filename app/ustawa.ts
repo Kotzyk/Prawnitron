@@ -8,6 +8,7 @@ export interface IUstawa {
     data_obowiazywania: string;
     zrodlo: string;
     status: string;
+    status_bool: boolean;
     rok: number;
     nr: number;
     poz: number;
