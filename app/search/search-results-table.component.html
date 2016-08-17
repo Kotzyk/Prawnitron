@@ -10,15 +10,18 @@
         <th></th>
       </tr>
     </thead>
-    <tbody>
-      <tr *ngFor="let ustawa of ustawy" class="">
+    <tbody *ngFor="let ustawa of ustawy">
+      <tr class="">
         <td class="">{{ustawa.tytul_skrocony}}</td>
         <td>{{ustawa.data_obowiazywania | date}}</td>
         <td>{{ustawa.status_bool}}</td>
         <td id="tick"> <!-- TODO: ikonki ticka i X, dodac warunkowanie wyswieltania <img [src]="" *ngIf=""/> --></td>
         <td>{{ustawa.nr}}</td>
         <td>{{ustawa.poz}}</td>
-        <td><button class="btn"></button></td> <!-- dropdown button -->
+        <td><button type="button" class="btn"></button></td> <!-- dropdown button -->
+      </tr>
+      <tr class="panel-collapse collapse in" role="tabpanel"> <!-- TODO: hide by default, react to button click -->
+        <td colspan=6><result-details></result-details></td>
       </tr>
     </tbody>
   </table>
