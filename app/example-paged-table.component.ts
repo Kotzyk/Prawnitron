@@ -4,6 +4,7 @@ import {PAGINATION_DIRECTIVES} from 'ng2-bootstrap/ng2-bootstrap';
 import {NG_TABLE_DIRECTIVES} from '../../../ng2-table';
 import {TableData} from './table-data';
 
+// http://valor-software.com/ng2-table/
 // webpack html imports
 let template = require('./table-demo.html');
 
