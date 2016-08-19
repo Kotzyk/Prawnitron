@@ -6,17 +6,16 @@ import {IUstawa}        from 'app/ustawa';
 
 @Injectable() 
   export class SearchService {
-    private prawoUrl = 'https//: ;
+    private prawoUrl = 'https//api-v3. /: ;
     private testUrl = 'app/sejmometr/page_1.json';
  
   constructor(private _http: Http) { }
- 
+  
   // Uses http.get() to load a single JSON file
-    getSearch(): Observable<any[]> {
-    return this.http.get(this.testUrl)
-        .map((response: Response) => <IUstawa[]>response.json.data())
-        .do(data => console.log("Otrzymano: " + JSON.stringify(data)))
-        .catch(this.handleError);
+  search(term: string): Observable<Hero[]> {
+    return this.http
+               .get(prawoUrl + `/?name=${term}`)
+               .map((r: Response) => r.json().data as IUstawa[]);
   }
   
   private handleError(error: Response){
