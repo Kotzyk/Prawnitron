@@ -3,7 +3,7 @@
  */
 import {Component}       from '@angular/core';
 import {HTTP_PROVIDERS}  from '@angular/http';
-
+import {Observable}      from 'Rxjs/observable';
 import {SearchService}   from 'app/search/search.service';
 import {NavBarComponent} from "./navbar.component";
 
