@@ -1,7 +1,10 @@
 /**
  * Created by Mateusz on 2016-08-14.
  */
-import {Component} from '@angular/core';
+import {Component}       from '@angular/core';
+import {HTTP_PROVIDERS}  from '@angular/http';
+
+import {SearchService}   from 'app/search/search.service';
 import {NavBarComponent} from "./navbar.component";
 
 @Component({
@@ -10,7 +13,8 @@ import {NavBarComponent} from "./navbar.component";
     <navbar></navbar>
     <router-outlet></router-outlet>
   `,
-    directives: [NavBarComponent]
+    directives: [NavBarComponent],
+     providers: [SearchService, HTTP_PROVIDERS]
 })
 export class AppComponent {
 }
