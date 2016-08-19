@@ -14,7 +14,7 @@ import {IUstawa}        from 'app/ustawa';
   // Uses http.get() to load a single JSON file
     getSearch(): Observable<any[]> {
     return this.http.get(this.testUrl)
-        .map((response: Response) => <IUstawa[]>response.json())
+        .map((response: Response) => <IUstawa[]>response.json.data())
         .do(data => console.log("Otrzymano: " + JSON.stringify(data)))
         .catch(this.handleError);
   }
