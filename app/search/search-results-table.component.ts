@@ -1,12 +1,13 @@
 import {Component} from '@angular/core';
-import {IUstawa} from 'app/ustawa'
+import {IUstawa} from "../ustawa";
+
 
 @Component({
   selector: 'results-table',
   templateUrl: 'app/search/search-resuts-table.component.html'
   
 })
-export class SearchTableResultsComponent { 
+export class SearchResultsTableComponent {
   ustawy: IUstawa[]=[
     
   ];

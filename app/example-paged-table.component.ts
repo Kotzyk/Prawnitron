@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {CORE_DIRECTIVES, FORM_DIRECTIVES, NgClass, NgIf} from '@angular/common';
-import {PAGINATION_DIRECTIVES} from 'ng2-bootstrap/ng2-bootstrap';
-import {NG_TABLE_DIRECTIVES} from '../../../ng2-table';
-import {TableData} from './table-data';
+//import {PAGINATION_DIRECTIVES} from '@angular/ng2-bootstrap';
+//import {NG_TABLE_DIRECTIVES} from '../../../ng2-table';
+//import {TableData} from './table-data';
 
 // http://valor-software.com/ng2-table/
 // webpack html imports
@@ -11,7 +11,9 @@ let template = require('./table-demo.html');
 @Component({
   selector: 'table-demo',
   template: template,
-  directives: [NG_TABLE_DIRECTIVES, PAGINATION_DIRECTIVES, NgClass, NgIf, CORE_DIRECTIVES, FORM_DIRECTIVES]
+  directives: [
+      //NG_TABLE_DIRECTIVES, //PAGINATION_DIRECTIVES,
+      NgClass, NgIf, CORE_DIRECTIVES, FORM_DIRECTIVES]
 })
 export class TableDemoComponent implements OnInit {
   public rows:Array<any> = [];
@@ -35,7 +37,7 @@ export class TableDemoComponent implements OnInit {
     filtering: {filterString: '', columnName: 'position'}
   };
 
-  private data:Array<any> = TableData;
+  //private data:Array<any> = TableData;
 
   public constructor() {
     this.length = this.data.length;

@@ -2,9 +2,7 @@
  * Created by Mateusz on 2016-08-14.
  */
 import {Component}       from '@angular/core';
-import {HTTP_PROVIDERS}  from '@angular/http';
-import { Observable } from 'rxjs/Rx';
-import {SearchService}   from 'app/search/search.service';
+import {SearchService}   from './search/search.service';
 import {NavBarComponent} from "./navbar.component";
 
 @Component({
@@ -14,7 +12,7 @@ import {NavBarComponent} from "./navbar.component";
     <router-outlet></router-outlet>
   `,
     directives: [NavBarComponent],
-     providers: [SearchService, HTTP_PROVIDERS]
+     providers: [SearchService]
 })
 export class AppComponent {
 }

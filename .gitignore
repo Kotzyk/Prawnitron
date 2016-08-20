@@ -50,3 +50,5 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
+/app/example-paged-table.component.ts
+/app/example-paged-table.component.html

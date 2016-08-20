@@ -1,4 +1,5 @@
 import {Component} from "@angular/core";
+import {IUstawa} from "../ustawa";
 
 @Component({
     selector: 'search-form',
@@ -39,6 +40,7 @@ export class SearchFormComponent {
             nazwa: 'Kodeks rodzinny i opiekuńczy'
         }];
 
+    ustawy: IUstawa[] = [];
     submitted = false;
 
     onSubmit() {

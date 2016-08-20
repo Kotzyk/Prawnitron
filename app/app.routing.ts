@@ -3,9 +3,9 @@
  */
 import {Routes, RouterModule} from '@angular/router';
 
-import {SearchComponent} from 'app/search/search.component';
-import {NotComponent} from "app/not.component";
-import {AboutComponent} from "app/about.component";
+import {SearchComponent} from './search/search.component';
+import {NotComponent} from "./not.component";
+import {AboutComponent} from "./about.component";
 
 const appRoutes: Routes = [
     {
@@ -19,6 +19,10 @@ const appRoutes: Routes = [
     {
         path: 'about',
         component: AboutComponent
+    },{
+        path: '',
+        redirectTo: '/about',
+        pathMatch: 'full'
     }
 ];
 export const routing = RouterModule.forRoot(appRoutes);

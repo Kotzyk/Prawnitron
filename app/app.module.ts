@@ -4,15 +4,16 @@
 import {NgModule}       from "@angular/core";
 import {BrowserModule}  from "@angular/platform-browser";
 import {FormsModule}    from "@angular/forms";
-import {HttpModule, HTTP_PROVIDERS}     from "@angular/http";
+import {HttpModule}     from "@angular/http";
 
-import {AppComponent} from "app/app.component";
-import {routing} from "app/app.routing";
+import {AppComponent} from './app.component';
+import {routing} from "./app.routing";
+import {SearchComponent} from "./search/search.component";
+import {NotComponent} from "./not.component";
+import {SearchFormComponent} from "./search/search-form.component";
+import {SearchService} from "./search/search.service";
+import {SearchResultsTableComponent} from "./search/search-results-table.component";
 
-import {SeachComponent} from 'app/search/search.component';
-import {SearchFormComponent} from 'app/search/search-form.component';
-import {SearchResultsTableComponent} from 'app/search/search-results-table.component';
-import {SearchService} from 'app/search/search.service';
 
 
 @NgModule({
@@ -29,7 +30,7 @@ import {SearchService} from 'app/search/search.service';
         SearchResultsTableComponent,
         SearchFormComponent,
     ],
-    providers: [ HTTP_PROVIDERS,
+    providers: [
     SearchService
   ],
     bootstrap: [AppComponent]
