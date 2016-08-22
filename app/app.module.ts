@@ -6,15 +6,17 @@ import {BrowserModule}  from "@angular/platform-browser";
 import {FormsModule}    from "@angular/forms";
 import {HttpModule}     from "@angular/http";
 
+import { XHRBackend } from '@angular/http';
+
+import {SearchService} from "./search/search.service";
+
 import {AppComponent} from './app.component';
 import {routing} from "./app.routing";
+
 import {SearchComponent} from "./search/search.component";
 import {NotComponent} from "./not.component";
 import {SearchFormComponent} from "./search/search-form.component";
-import {SearchService} from "./search/search.service";
 import {SearchResultsTableComponent} from "./search/search-results-table.component";
-
-
 
 @NgModule({
     imports: [
@@ -31,7 +33,8 @@ import {SearchResultsTableComponent} from "./search/search-results-table.compone
         SearchFormComponent,
     ],
     providers: [
-    SearchService
+    SearchService,
+     XHRBackend
   ],
     bootstrap: [AppComponent]
 })
