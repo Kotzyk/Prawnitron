@@ -1,5 +1,19 @@
 <div class="panel panel-primary>
-  <lablel for="arty">Atrykuly</label>
-  <input type="text" id="arty" [(ngModel)]={{ustawa.artykuly}}/>
-  <button class="btn btn-primary" type="submit" (click)='getArticles()>Mode przypierdol!</button>
+  <div class="panel-header">
+    {{ustawa.prawo.tytul_skrocony}}
+  </div>
+  <div class="panel-body">
+  <h2>Pełen tytuł: {{ustawa.prawo.tytul}} </h2>
+  <h3>Data obowiazywania: {{ustawa.prawo.data_obowiazywania | date}}</h3>
+  <span>  <h3>Status: {{ustawa.prawo.isap_status_str}} </h3> <div *ngIf></div></span>
+  
+  <h3>Zrodlo: {{ustawa.prawo.zrodlo}} </h3>
+  <h3>Adres: {{ustawa.prawo.zrodlo}}+": "+{{ustawa.prawo.rok}}+"."+ {{ustawa.prawo.nr}}+"."+ {{ustawa.prawo.poz}} </h3>
+  
+  <form>
+    <lablel for="arty">Atrykuly</label>
+    <input type="text" id="arty" [(ngModel)]={{ustawa.artykuly}}/>
+    <button class="btn btn-primary" type="submit" (click)='getArticles()>Mode przypierdol!</button>
+    </form>
+    </div>
 </div>
