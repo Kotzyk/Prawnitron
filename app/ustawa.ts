@@ -1,5 +1,7 @@
 /**
  * Created by Mateusz on 2016-08-13.
+ * 
+ * https://forum.kodujdlapolski.pl/t/analiza-prawa/2557/2 --- tutaj jest URL do API
  */
 export interface IUstawa {
     prawo.tytul_skrocony: string;
